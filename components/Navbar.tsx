@@ -30,22 +30,12 @@ export default function Navbar() {
       <div className="container-max">
         <div className="flex items-center justify-between h-[72px] px-6 lg:px-0">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 shrink-0 group">
-            <div className="relative">
-              <img
-                src={COMPANY_INFO.logoMark}
-                alt={`${COMPANY_INFO.name} logo`}
-                className="h-10 w-10 object-contain transition-transform duration-300 group-hover:scale-105"
-              />
-            </div>
-            <div>
-              <span className="block font-heading font-bold text-[15px] text-navy-700 leading-tight tracking-tight">
-                Bridge<span className="text-accent-500"> Globe</span> Exims
-              </span>
-              <span className="block text-[10px] text-neutral-400 font-medium tracking-[0.14em] uppercase">
-                Import &amp; Export
-              </span>
-            </div>
+          <Link href="/" className="flex items-center shrink-0 group">
+            <img
+              src="/logo/final logo_400-400.png"
+              alt="BRIDGEGLOBE EXIMS logo"
+              className="h-12 w-12 object-contain transition-transform duration-300 group-hover:scale-105"
+            />
           </Link>
 
           {/* Desktop nav */}

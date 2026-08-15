@@ -21,22 +21,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-12">
           {/* Company info */}
           <div>
-            <Link href="/" className="flex items-center gap-3 mb-6">
+            <Link href="/" className="flex items-center mb-6">
               <Image
-                src={COMPANY_INFO.logoMark}
-                alt={COMPANY_INFO.name}
+                src="/logo/final logo_400-400.png"
+                alt="BRIDGEGLOBE EXIMS logo"
                 width={48}
                 height={48}
                 className="rounded-xl"
               />
-              <div>
-                <span className="font-heading font-bold text-lg block">
-                  BRIDGEGLOBE EXIMS
-                </span>
-                <span className="text-xs text-navy-200">
-                  Import &amp; Export Solutions
-                </span>
-              </div>
             </Link>
             <p className="text-navy-200 text-sm leading-relaxed mb-6">
               Your trusted partner for international trade. We connect Indian manufacturers
