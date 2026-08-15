@@ -1,7 +1,6 @@
 'use client';
 import Link from 'next/link';
-import { Target, Eye, ArrowRight, User, CheckCircle } from 'lucide-react';
-import { TEAM_MEMBERS } from '@/lib/constants';
+import { Target, Eye, ArrowRight, Shield, Award, Heart, Lightbulb } from 'lucide-react';
 import Reveal from '@/components/Reveal';
 
 /* ═══════════════════════════════════════════
@@ -9,10 +8,10 @@ import Reveal from '@/components/Reveal';
    ═══════════════════════════════════════════ */
 function CoreValues() {
   const values = [
-    { title: 'Integrity', description: 'Transparent and ethical business practices in all our dealings.' },
-    { title: 'Quality', description: 'Commitment to delivering products that meet international standards.' },
-    { title: 'Reliability', description: 'Consistent and dependable service you can count on.' },
-    { title: 'Innovation', description: 'Continuous improvement in processes and solutions.' },
+    { title: 'Integrity', description: 'Transparent and ethical business practices in all our dealings.', icon: Shield },
+    { title: 'Quality', description: 'Commitment to delivering products that meet international standards.', icon: Award },
+    { title: 'Reliability', description: 'Consistent and dependable service you can count on.', icon: Heart },
+    { title: 'Innovation', description: 'Continuous improvement in processes and solutions.', icon: Lightbulb },
   ];
 
   return (
@@ -20,7 +19,7 @@ function CoreValues() {
       <div className="container-max">
         <Reveal className="text-center max-w-2xl mx-auto mb-12">
           <div className="inline-flex items-center gap-2 bg-accent-50 text-accent-600 px-4 py-2 rounded-full text-sm font-medium mb-4">
-            <CheckCircle className="w-4 h-4" />
+            <Shield className="w-4 h-4" />
             <span>Our Core Values</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-navy-800 mb-4">
@@ -36,7 +35,7 @@ function CoreValues() {
             <Reveal key={index} delay={index * 100}>
               <div className="card p-6 text-center group h-full">
                 <div className="w-16 h-16 mx-auto rounded-full bg-gradient-to-br from-navy-50 to-navy-100 flex items-center justify-center mb-4 group-hover:from-accent-400 group-hover:to-accent-500 transition-all duration-300">
-                  <CheckCircle className="w-8 h-8 text-navy-600 group-hover:text-white transition-colors duration-300" />
+                  <value.icon className="w-8 h-8 text-navy-600 group-hover:text-white transition-colors duration-300" />
                 </div>
                 <h4 className="font-heading font-semibold text-navy-800 mb-2">{value.title}</h4>
                 <p className="text-sm text-neutral-600">{value.description}</p>
@@ -57,11 +56,10 @@ export default function About() {
         <div className="container-max max-w-3xl mx-auto">
           <span className="label bg-white/10 text-white border border-white/15 mb-6 inline-flex">About us</span>
           <h1 className="text-4xl md:text-5xl font-heading font-extrabold text-white mb-4">
-            Bridging India <span className="text-gradient-accent">and the world</span>
+            Bridging India <span className="text-gradient-accent">to the world</span>
           </h1>
           <p className="text-lg text-navy-200 max-w-2xl mx-auto leading-relaxed">
-            Founded in 2008 in Pune, Bridge Globe Exims has grown into a trusted partner for businesses
-            across 50+ countries, specializing in premium agricultural exports and imports.
+            Built from the ground up to serve global businesses with reliable sourcing, quality products, and seamless trade solutions.
           </p>
         </div>
       </section>
@@ -72,18 +70,14 @@ export default function About() {
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
             <Reveal>
               <span className="label-accent mb-4">Our story</span>
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-navy-800 mt-4 mb-6">From Pune to the world</h2>
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-navy-800 mt-4 mb-6">A New Journey, Built for Global Trade</h2>
               <div className="space-y-4 text-neutral-500 leading-relaxed">
-                <p>What started in 2008 with a simple mission — bridging quality Indian products with international markets — has grown into a trusted operation spanning 50+ countries.</p>
-                <p>Our understanding of trade regulations, customs, and logistics helps us build lasting relationships with suppliers, freight forwarders, and buyers worldwide.</p>
+                <p>BRIDGEGLOBE EXIMS began with a simple idea — that good products should have no borders and that international trade should be built on trust. Starting from India, we set out to create meaningful connections between businesses, suppliers, and markets around the world.</p>
+                <p>We are at the beginning of our journey, but our ambition is global. We believe in growing through reliable partnerships, quality products, transparent business, and a commitment to doing things the right way. As we grow, our vision is to build BRIDGEGLOBE EXIMS into a trusted name in international trade — connecting more markets, creating more opportunities, and building relationships that last.</p>
               </div>
             </Reveal>
             <Reveal delay={150} className="relative">
-              <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Trade operations" className="rounded-2xl w-full shadow-deep" />
-              <div className="absolute -bottom-6 -right-6 bg-accent-500 text-white rounded-2xl px-6 py-4 shadow-glow-orange hidden md:block">
-                <div className="text-3xl font-heading font-extrabold">15+</div>
-                <div className="text-sm text-accent-100">Years of excellence</div>
-              </div>
+              <img src="/people/Chinmay-with-container.webp" alt="Chinmay Deshmukh with container — BRIDGEGLOBE EXIMS" className="rounded-2xl w-full max-h-[420px] object-cover shadow-deep" />
             </Reveal>
           </div>
         </div>
@@ -92,7 +86,7 @@ export default function About() {
       {/* Mission + Vision */}
       <section className="section bg-surface-alt">
         <div className="container-max">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-8">
             <Reveal className="card !p-8 relative overflow-hidden">
               <span className="absolute top-0 left-8 w-8 h-[3px] bg-accent-500 rounded-b-full" />
               <Target className="w-8 h-8 text-navy-600 mb-4 mt-2" />
@@ -123,26 +117,32 @@ export default function About() {
         <div className="container-max">
           <Reveal className="max-w-xl mb-14">
             <span className="label-accent mb-4">Leadership</span>
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-navy-800 mt-4 mb-3">Meet our directors</h2>
-            <p className="text-neutral-500 text-lg">Experienced professionals driving our vision of global trade connectivity.</p>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-navy-800 mt-4 mb-3">Meet our founders</h2>
+            <p className="text-neutral-500 text-lg">The visionaries behind BRIDGEGLOBE EXIMS, driving our mission of global trade connectivity.</p>
           </Reveal>
-          <div className="grid md:grid-cols-3 gap-8">
-            {TEAM_MEMBERS.map((m, i) => (
-              <Reveal key={i} delay={i * 100} className="card overflow-hidden !p-0 group">
-                <div className="relative aspect-[4/5] overflow-hidden">
-                  <img src={m.image} alt={m.name} className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-navy-800/80 via-navy-800/10 to-transparent" />
-                  <div className="absolute bottom-0 left-0 right-0 p-6">
-                    <div className="w-10 h-10 rounded-full bg-accent-500 flex items-center justify-center mb-3">
-                      <User className="w-5 h-5 text-white" />
-                    </div>
-                    <h4 className="text-white font-heading font-bold">{m.name}</h4>
-                    <p className="text-accent-300 text-sm">{m.designation}</p>
-                  </div>
+          <div className="grid md:grid-cols-2 gap-6 md:gap-8 max-w-3xl mx-auto">
+            <Reveal className="card overflow-hidden !p-0 group">
+              <div className="relative aspect-[4/5] overflow-hidden">
+                <img src="/people/Chinmay-Founding-Director .webp" alt="Chinmay — Founding Director" className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                <div className="absolute inset-0 bg-gradient-to-t from-navy-800/80 via-navy-800/10 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <h4 className="text-white font-heading font-bold">Chinmay Avinash Deshmukh</h4>
+                  <p className="text-accent-300 text-sm">Founding Director</p>
                 </div>
-                <div className="p-6"><p className="text-sm text-neutral-500 leading-relaxed">{m.description}</p></div>
-              </Reveal>
-            ))}
+              </div>
+              <div className="p-6"><p className="text-sm text-neutral-500 leading-relaxed">Driving the vision and strategy of BRIDGEGLOBE EXIMS, with a focus on building trusted global trade partnerships.</p></div>
+            </Reveal>
+            <Reveal delay={100} className="card overflow-hidden !p-0 group">
+              <div className="relative aspect-[4/5] overflow-hidden">
+                <img src="/people/Nutan-Founding-Partner.webp" alt="Nutan — Founding Partner" className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                <div className="absolute inset-0 bg-gradient-to-t from-navy-800/80 via-navy-800/10 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <h4 className="text-white font-heading font-bold">Nutan Avinash Deshmukh</h4>
+                  <p className="text-accent-300 text-sm">Founding Partner</p>
+                </div>
+              </div>
+              <div className="p-6"><p className="text-sm text-neutral-500 leading-relaxed">Co-building BRIDGEGLOBE EXIMS with a commitment to quality, reliability, and meaningful global partnerships.</p></div>
+            </Reveal>
           </div>
         </div>
       </section>
@@ -150,7 +150,7 @@ export default function About() {
       {/* CTA */}
       <section className="section bg-gradient-to-br from-accent-500 to-accent-600 text-center text-white">
         <div className="container-max max-w-xl mx-auto">
-          <h2 className="text-3xl font-heading font-bold text-white mb-3">Let&apos;s work together</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-white mb-3">Let&apos;s work together</h2>
           <p className="text-accent-100 mb-8">Ready to expand your global trade? Our advisors are here to help.</p>
           <Link href="/contact" className="inline-flex items-center justify-center px-6 py-3 bg-white text-accent-600 font-semibold rounded-xl shadow-md transition-all duration-300 hover:bg-neutral-50 hover:shadow-lg hover:-translate-y-0.5">
             Contact us <ArrowRight className="w-4 h-4 ml-2" />

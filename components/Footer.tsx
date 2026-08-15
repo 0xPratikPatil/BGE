@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { Globe, Phone, Mail, MapPin, Linkedin, Facebook, Twitter, FileText } from 'lucide-react';
+import { Globe, Phone, Mail, MapPin, Linkedin, Instagram } from 'lucide-react';
 import { COMPANY_INFO, NAVIGATION, PRODUCT_CATEGORIES } from '@/lib/constants';
 
 const PRODUCT_LINKS: Record<string, string> = {
@@ -33,7 +33,7 @@ export default function Footer() {
               />
               <div>
                 <span className="font-heading font-bold text-lg block">
-                  {COMPANY_INFO.legalName}
+                  BRIDGEGLOBE EXIMS
                 </span>
                 <span className="text-xs text-navy-200">
                   Import &amp; Export Solutions
@@ -46,25 +46,22 @@ export default function Footer() {
             </p>
             <div className="flex gap-3">
               <a
-                href="#"
+                href="https://www.linkedin.com/company/bridgeglobe-exims-llp/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-lg bg-navy-700 flex items-center justify-center hover:bg-accent-500 transition-all duration-300 hover:-translate-y-1"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/bridgeglobe_exims"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-lg bg-navy-700 flex items-center justify-center hover:bg-accent-500 transition-all duration-300 hover:-translate-y-1"
-                aria-label="Facebook"
+                aria-label="Instagram"
               >
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 rounded-lg bg-navy-700 flex items-center justify-center hover:bg-accent-500 transition-all duration-300 hover:-translate-y-1"
-                aria-label="Twitter"
-              >
-                <Twitter className="w-5 h-5" />
+                <Instagram className="w-5 h-5" />
               </a>
             </div>
           </div>
@@ -133,12 +130,7 @@ export default function Footer() {
                   <span className="text-sm">{COMPANY_INFO.fullAddress}</span>
                 </div>
               </li>
-              <li>
-                <div className="flex items-start gap-3 text-navy-200">
-                  <FileText className="w-5 h-5 mt-0.5 flex-shrink-0 text-accent-400" />
-                  <span className="text-sm">GST: {COMPANY_INFO.gst}</span>
-                </div>
-              </li>
+
             </ul>
           </div>
         </div>
@@ -147,7 +139,7 @@ export default function Footer() {
         <div className="border-t border-navy-700 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-navy-300 text-sm text-center md:text-left">
-              &copy; {currentYear} {COMPANY_INFO.legalName}. All rights reserved.
+              &copy; 2026 BRIDGEGLOBE EXIMS LLP. All rights reserved.
             </p>
             <p className="text-navy-300 text-sm flex items-center gap-2">
               <Globe className="w-4 h-4 text-accent-400" />

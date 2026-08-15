@@ -2,10 +2,10 @@ export const COMPANY_INFO = {
   name: 'Bridge Globe Exims',
   legalName: 'Bridge Globe Exims LLP',
   tagline: 'Connecting Global Markets Through Reliable Trade Solutions',
-  email: 'bridgeglobeexims@gmail.com',
-  phone: '+91 9422462229',
-  whatsapp: '919422462229',
-  gst: '27AALFB-XXXXX-X1Z',
+  email: 'info@bridgeglobeexims.com',
+  phone: '+91 7249222923',
+  whatsapp: '917249222923',
+
   logoMark: '/logo/final logo-04.png',
   logoFull: '/logo/final logo_800-800.png',
   address: { city: 'Pune', state: 'Maharashtra', country: 'India' },
@@ -23,7 +23,7 @@ export const CERTIFICATIONS = [
   { name: 'IEC', description: 'Importer Exporter Code', fullForm: 'Importer Exporter Code' },
   { name: 'APEDA', description: 'Agricultural & Processed Food Products Export Authority', fullForm: 'Agri & Processed Food Export Authority' },
   { name: 'FSSAI', description: 'Food Safety and Standards Authority of India', fullForm: 'Food Safety & Standards Authority' },
-  { name: 'GST', description: 'Goods & Services Tax Registration', fullForm: 'Goods & Services Tax' }
+  { name: 'GST', description: 'Goods and Services Tax Registration', fullForm: 'Goods and Services Tax' },
 ] as const;
 
 export const EXPORT_MARKETS = [
@@ -58,8 +58,7 @@ export const TRADE_ROUTES = [
 ] as const;
 
 export const FRESH_PRODUCE_EXPORTS = [
-  { name: 'Mango', image: '/products/mango.webp', description: 'Premium Alphonso and Kesar varieties, hand-picked from Indian orchards.' },
-  { name: 'Alphonso Mango', image: '/products/alphanso.webp', description: 'The king of mangoes — rich, aromatic, and naturally sweet.' },
+  { name: 'Alphonso', image: '/products/alphanso.webp', description: 'The king of mangoes — rich, aromatic, and naturally sweet.' },
   { name: 'Pomegranate', image: '/products/pomegranate.webp', description: 'Fresh, ruby-red pomegranates known for their deep colour and flavour.' },
   { name: 'Watermelon', image: '/products/watermelon.webp', description: 'Refreshing seedless and seeded varieties, ideal for bulk supply.' },
   { name: 'Green Grapes', image: '/products/green-grapes.webp', description: 'Crisp, seedless green grapes sourced from certified farms.' },
@@ -69,12 +68,12 @@ export const FRESH_PRODUCE_EXPORTS = [
   { name: 'Onion', image: '/products/onion.webp', description: 'Red and white onions, sourced in bulk from Indian farms.' },
   { name: 'Tender Coconut', image: '/products/fresh-coconut.webp', description: 'Fresh tender coconuts, packed for international shipping.' },
   { name: 'Semi Husked Coconut', image: '/products/dry-coconut.webp', description: 'Semi-husked coconuts with extended shelf life for export.' },
+  { name: 'Banana', image: '/products/banana.webp', description: 'Fresh Indian bananas, ideal for bulk international supply.' },
 ] as const;
 
 export const FRESH_PRODUCE_IMPORTS = [
   { name: 'Apple', image: '/products/apple.webp', description: 'Crisp, premium-grade apples sourced from trusted global orchards.' },
   { name: 'Kiwi', image: '/products/kiwi.webp', description: 'Fresh green kiwifruit, rich in flavour and naturally ripe.' },
-  { name: 'Oranges', image: '/products/oranges.webp', description: 'Juicy, seedless oranges available in bulk for retail and wholesale.' },
   { name: 'Mandarins', image: '/products/oranges.webp', description: 'Easy-peel mandarins, sweet and refreshing — ideal for seasonal supply.' },
   { name: 'Grapes', image: '/products/green-grapes.webp', description: 'Imported premium grapes, available in green and red varieties.' },
   { name: 'Avocados', image: '/products/avacados.webp', description: 'Ripe Hass avocados, carefully packed to preserve freshness.' },
@@ -92,7 +91,7 @@ export const PRODUCT_CATEGORIES = [
   {
     name: 'Fresh Produce — Exports',
     description: 'Premium fresh fruits and vegetables sourced directly from Indian farms, exported worldwide.',
-    image: '/products/mango.webp',
+    image: '/products/alphanso.webp',
     items: FRESH_PRODUCE_EXPORTS,
   },
   {

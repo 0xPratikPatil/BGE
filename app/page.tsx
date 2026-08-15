@@ -5,7 +5,7 @@ import Image from 'next/image';
 import {
   Globe, Ship, Package, Award, ShieldCheck, Truck, UserCheck,
   FileText, Headphones, ArrowRight, Plane, MessageCircle,
-  Phone, Mail, Leaf, Sparkles
+  Phone, Mail, Leaf
 } from 'lucide-react';
 import {
   COMPANY_INFO, WHY_CHOOSE_US,
@@ -18,17 +18,12 @@ import Reveal from '@/components/Reveal';
    HERO
    ═══════════════════════════════════════════ */
 function Hero() {
-  const [heroImages, setHeroImages] = useState<{ src: string; alt: string; label: string }[]>([]);
-
-  useEffect(() => {
-    const allProducts = [
-      ...FRESH_PRODUCE_EXPORTS.map(p => ({ src: p.image, alt: p.name, label: 'Export' })),
-      ...FRESH_PRODUCE_IMPORTS.map(p => ({ src: p.image, alt: p.name, label: 'Import' })),
-      ...SPICES.map(p => ({ src: p.image, alt: p.name, label: 'Spices' })),
-    ];
-    const shuffled = [...allProducts].sort(() => Math.random() - 0.5);
-    setHeroImages(shuffled.slice(0, 4));
-  }, []);
+  const heroImages = [
+    { src: '/products/alphanso.webp', alt: 'Alphonso' },
+    { src: '/products/turmeric.webp', alt: 'Turmeric' },
+    { src: '/products/green-chillies.webp', alt: 'Green Chilli' },
+    { src: '/products/dry-coconut.webp', alt: 'Dry Coconut' },
+  ];
 
   return (
     <section className="relative bg-gradient-to-br from-navy-50 via-white to-accent-50 overflow-hidden">
@@ -51,23 +46,15 @@ function Hero() {
           {/* Left: Copy */}
           <div className="space-y-6 lg:space-y-8">
             <Reveal>
-              <div className="inline-flex items-center gap-2 bg-navy-50 text-navy-700 px-4 py-2 rounded-full text-sm font-medium border border-navy-100">
-                <Sparkles className="w-4 h-4 text-accent-500" />
-                <span>Trusted Import Export Partner</span>
-              </div>
-            </Reveal>
-
-            <Reveal delay={75}>
               <h1 className="text-[2.5rem] sm:text-[3rem] lg:text-display font-heading font-extrabold text-navy-800 leading-[1.06]">
                 Connecting Global Markets Through{' '}
                 <span className="text-gradient-accent">Reliable Trade Solutions</span>
               </h1>
             </Reveal>
 
-            <Reveal delay={150}>
+            <Reveal delay={75}>
               <p className="text-lg text-neutral-600 leading-relaxed max-w-xl">
-                Your trusted partner for international trade. We specialize in the export of
-                premium agricultural products and spices from India to markets worldwide.
+                We connect businesses, markets, and opportunities across borders — enabling seamless international trade through trusted sourcing, quality products, and reliable global partnerships. From India to the world and beyond, BRIDGE GLOBE EXIMS is building a stronger bridge between markets and creating opportunities for businesses to grow globally.
               </p>
             </Reveal>
 
@@ -104,57 +91,50 @@ function Hero() {
           </div>
 
           {/* Right: Product Image Grid */}
-          <Reveal delay={200} className="hidden lg:block">
-            {heroImages.length > 0 && (
-              <div className="grid grid-cols-2 gap-4">
-                <div className="space-y-4">
-                  <div className="relative rounded-2xl overflow-hidden shadow-lg aspect-[3/4]">
-                    <Image
-                      src={heroImages[0].src}
-                      alt={heroImages[0].alt}
-                      fill
-                      className="object-cover"
-                      priority
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-navy-900/50 to-transparent" />
-                    <span className="absolute bottom-4 left-4 text-white font-semibold text-sm bg-accent-500/90 px-3 py-1 rounded-full">{heroImages[0].label}</span>
-                  </div>
-                  <div className="relative rounded-2xl overflow-hidden shadow-lg aspect-square">
-                    <Image
-                      src={heroImages[1].src}
-                      alt={heroImages[1].alt}
-                      fill
-                      className="object-cover"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-navy-900/50 to-transparent" />
-                    <span className="absolute bottom-4 left-4 text-white font-semibold text-sm bg-navy-800/90 px-3 py-1 rounded-full">{heroImages[1].label}</span>
-                  </div>
+          <Reveal delay={200} className="hidden md:block">
+            <div className="grid grid-cols-2 gap-4">
+              <div className="space-y-4">
+                <div className="relative rounded-2xl overflow-hidden shadow-lg aspect-[3/4]">
+                  <Image
+                    src={heroImages[0].src}
+                    alt={heroImages[0].alt}
+                    fill
+                    className="object-cover"
+                    priority
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-navy-900/50 to-transparent" />
                 </div>
-                <div className="space-y-4 pt-8">
-                  <div className="relative rounded-2xl overflow-hidden shadow-lg aspect-square">
-                    <Image
-                      src={heroImages[2].src}
-                      alt={heroImages[2].alt}
-                      fill
-                      className="object-cover"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-navy-900/50 to-transparent" />
-                    <span className="absolute bottom-4 left-4 text-white font-semibold text-sm bg-accent-500/90 px-3 py-1 rounded-full">{heroImages[2].label}</span>
-                  </div>
-                  <div className="relative rounded-2xl overflow-hidden shadow-lg aspect-[3/4]">
-                    <Image
-                      src={heroImages[3].src}
-                      alt={heroImages[3].alt}
-                      fill
-                      className="object-cover"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-navy-900/50 to-transparent" />
-                    <span className="absolute bottom-4 left-4 text-white font-semibold text-sm bg-accent-500/90 px-3 py-1 rounded-full">{heroImages[3].label}</span>
-                  </div>
+                <div className="relative rounded-2xl overflow-hidden shadow-lg aspect-square">
+                  <Image
+                    src={heroImages[1].src}
+                    alt={heroImages[1].alt}
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-navy-900/50 to-transparent" />
                 </div>
               </div>
-            )}
-
+              <div className="space-y-4 pt-8">
+                <div className="relative rounded-2xl overflow-hidden shadow-lg aspect-square">
+                  <Image
+                    src={heroImages[2].src}
+                    alt={heroImages[2].alt}
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-navy-900/50 to-transparent" />
+                </div>
+                <div className="relative rounded-2xl overflow-hidden shadow-lg aspect-[3/4]">
+                  <Image
+                    src={heroImages[3].src}
+                    alt={heroImages[3].alt}
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-navy-900/50 to-transparent" />
+                </div>
+              </div>
+            </div>
           </Reveal>
         </div>
       </div>
@@ -215,13 +195,16 @@ function WhyChooseUs() {
    FEATURED PRODUCTS
    ═══════════════════════════════════════════ */
 function FeaturedProducts() {
-  const allProducts = useMemo(() => [...FRESH_PRODUCE_EXPORTS, ...SPICES, ...FRESH_PRODUCE_IMPORTS], []);
-  const [products, setProducts] = useState<typeof allProducts>([]);
-
-  useEffect(() => {
-    const shuffled = [...allProducts].sort(() => Math.random() - 0.5);
-    setProducts(shuffled.slice(0, 8));
-  }, [allProducts]);
+  const products = [
+    { name: 'Alphonso', image: '/products/alphanso.webp', description: 'The king of mangoes — rich, aromatic, and naturally sweet.' },
+    { name: 'Green Chilli', image: '/products/green-chillies.webp', description: 'Fresh green chillies, sorted and packed for export quality.' },
+    { name: 'Semi Husked Coconut', image: '/products/dry-coconut.webp', description: 'Semi-husked coconuts with extended shelf life for export.' },
+    { name: 'Onion', image: '/products/onion.webp', description: 'Red and white onions, sourced in bulk from Indian farms.' },
+    { name: 'Pomegranate', image: '/products/pomegranate.webp', description: 'Fresh, ruby-red pomegranates known for their deep colour and flavour.' },
+    { name: 'Green Grapes', image: '/products/green-grapes.webp', description: 'Crisp, seedless green grapes sourced from certified farms.' },
+    { name: 'Banana', image: '/products/banana.webp', description: 'Fresh Indian bananas, ideal for bulk international supply.' },
+    { name: 'Turmeric', image: '/products/turmeric.webp', description: 'Premium Indian turmeric, known for its rich colour and medicinal properties.' },
+  ];
 
   return (
     <section className="section bg-gradient-to-br from-surface-alt to-navy-50/30">
@@ -279,7 +262,7 @@ function GlobalPresence() {
   return (
     <section className="section bg-gradient-to-br from-navy-700 to-navy-800 text-white">
       <div className="container-max">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left: Content */}
           <Reveal>
             <div className="inline-flex items-center gap-2 bg-white/10 text-white px-4 py-2 rounded-full text-sm font-medium mb-4 border border-white/20">
@@ -320,7 +303,7 @@ function GlobalPresence() {
 
           {/* Right: Market grid */}
           <Reveal delay={150}>
-            <div className="grid grid-cols-3 gap-4 md:gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 md:gap-6">
               {EXPORT_MARKETS.map((market, index) => (
                 <div key={index} className="text-center group">
                   <div className="text-3xl md:text-4xl mb-2 transition-transform duration-300 group-hover:scale-110">
@@ -423,7 +406,7 @@ function TradeRoutes() {
           {/* Right: Images */}
           <Reveal delay={150}>
             <div className="space-y-4">
-              <div className="relative rounded-2xl overflow-hidden shadow-lg h-72">
+              <div className="relative rounded-2xl overflow-hidden shadow-lg h-56 sm:h-72">
                 <Image
                   src="/home/cargo-ship.webp"
                   alt="Cargo ship for sea freight"
@@ -436,7 +419,7 @@ function TradeRoutes() {
                   <span className="text-white font-semibold">Sea Freight</span>
                 </div>
               </div>
-              <div className="relative rounded-2xl overflow-hidden shadow-lg h-72">
+              <div className="relative rounded-2xl overflow-hidden shadow-lg h-56 sm:h-72">
                 <Image
                   src="/home/cargo-plane.webp"
                   alt="Cargo plane for air freight"

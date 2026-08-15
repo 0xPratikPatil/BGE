@@ -4,9 +4,9 @@ import './globals.css';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://bridgeglobeexims.com'),
-  title: 'Bridge Globe Exims | Import & Export Company in India',
+  title: 'BRIDGEGLOBE EXIMS | Import & Export Company in India',
   description:
-    'Bridge Globe Exims connects Indian producers with global buyers — handling sourcing, compliance, and logistics for fresh produce and spice exports across 50+ countries.',
+    'BRIDGEGLOBE EXIMS connects Indian producers with global buyers — handling sourcing, compliance, and logistics for fresh produce and spice exports across 50+ countries.',
   keywords:
     'import export company, global trade, agricultural products export, spices export, India export, international trade, B2B export',
   robots: 'index, follow',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
   manifest: '/favicon/site.webmanifest',
   openGraph: {
-    title: 'Bridge Globe Exims | Import & Export Company in India',
+    title: 'BRIDGEGLOBE EXIMS | Import & Export Company in India',
     description:
       'Connecting Indian producers with global buyers through reliable, compliant international trade.',
     type: 'website',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Bridge Globe Exims | Import & Export Solutions',
+    title: 'BRIDGEGLOBE EXIMS | Import & Export Solutions',
     description: 'Connecting Indian producers with global buyers across 50+ countries.',
     images: ['/logo/final logo_1024-1024.png'],
   },
