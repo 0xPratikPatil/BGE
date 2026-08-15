@@ -16,24 +16,17 @@ type Status = 'idle' | 'loading' | 'success' | 'error';
    ═══════════════════════════════════════════ */
 function ContactHero() {
   return (
-    <section className="relative bg-gradient-to-br from-navy-700 to-navy-800 text-white section overflow-hidden">
-      <div className="absolute top-0 right-0 w-96 h-96 bg-accent-400/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 left-0 w-72 h-72 bg-amber/10 rounded-full blur-3xl" />
-
-      <div className="container-max max-w-3xl mx-auto relative z-10">
-        <div className="max-w-3xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 bg-white/10 text-white px-4 py-2 rounded-full text-sm font-medium mb-6 border border-white/20">
-            <span>Get in Touch</span>
-          </div>
-          <h1 className="text-4xl md:text-5xl font-heading font-extrabold text-white mb-6">
-            Let&apos;s Start a{' '}
-            <span className="text-gradient-accent">Conversation</span>
-          </h1>
-          <p className="text-navy-200 text-lg leading-relaxed">
-            Whether you&apos;re looking to source products from India or explore export opportunities,
-            our team is ready to help. Reach out and we&apos;ll get back to you within 24 hours.
-          </p>
-        </div>
+    <section className="section-sm bg-gradient-to-b from-navy-700 to-navy-800 text-white text-center">
+      <div className="container-max max-w-3xl mx-auto">
+        <span className="label bg-white/10 text-white border border-white/15 mb-6 inline-flex">Get in Touch</span>
+        <h1 className="text-4xl md:text-5xl font-heading font-extrabold text-white mb-4">
+          Let&apos;s Start a{' '}
+          <span className="text-gradient-accent">Conversation</span>
+        </h1>
+        <p className="text-navy-200 text-lg leading-relaxed">
+          Whether you&apos;re looking to source products from India or explore export opportunities,
+          our team is ready to help. Reach out and we&apos;ll get back to you within 24 hours.
+        </p>
       </div>
     </section>
   );

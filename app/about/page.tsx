@@ -72,12 +72,12 @@ export default function About() {
               <span className="label-accent mb-4">Our story</span>
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-navy-800 mt-4 mb-6">A New Journey, Built for Global Trade</h2>
               <div className="space-y-4 text-neutral-500 leading-relaxed">
-                <p>BRIDGEGLOBE EXIMS began with a simple idea — that good products should have no borders and that international trade should be built on trust. Starting from India, we set out to create meaningful connections between businesses, suppliers, and markets around the world.</p>
-                <p>We are at the beginning of our journey, but our ambition is global. We believe in growing through reliable partnerships, quality products, transparent business, and a commitment to doing things the right way. As we grow, our vision is to build BRIDGEGLOBE EXIMS into a trusted name in international trade — connecting more markets, creating more opportunities, and building relationships that last.</p>
+                <p>BRIDGEGLOBE EXIMS began with a simple idea, that good products should have no borders and that international trade should be built on trust. Starting from India, we set out to create meaningful connections between businesses, suppliers, and markets around the world.</p>
+                <p>We are at the beginning of our journey, but our ambition is global. We believe in growing through reliable partnerships, quality products, transparent business, and a commitment to doing things the right way. As we grow, our vision is to build BRIDGEGLOBE EXIMS into a trusted name in international trade, connecting more markets, creating more opportunities, and building relationships that last.</p>
               </div>
             </Reveal>
             <Reveal delay={150} className="relative">
-              <img src="/people/Chinmay-with-container.webp" alt="Chinmay Deshmukh with container — BRIDGEGLOBE EXIMS" className="rounded-2xl w-full max-h-[420px] object-cover shadow-deep" />
+              <img src="/people/Chinmay-with-container.webp" alt="Chinmay Deshmukh with container, BRIDGEGLOBE EXIMS" className="rounded-2xl w-full max-h-[420px] object-cover shadow-deep" />
             </Reveal>
           </div>
         </div>
@@ -101,7 +101,7 @@ export default function About() {
               <Eye className="w-8 h-8 text-accent-500 mb-4 mt-2" />
               <h3 className="font-heading font-bold text-xl text-navy-800 mb-3">Our vision</h3>
               <p className="text-neutral-500 leading-relaxed">
-                To become a trading company recognized for quality, trust, and innovation —
+                To become a trading company recognized for quality, trust, and innovation,
                 making international markets accessible to businesses of all sizes.
               </p>
             </Reveal>
@@ -123,7 +123,7 @@ export default function About() {
           <div className="grid md:grid-cols-2 gap-6 md:gap-8 max-w-3xl mx-auto">
             <Reveal className="card overflow-hidden !p-0 group">
               <div className="relative aspect-[4/5] overflow-hidden">
-                <img src="/people/Chinmay-Founding-Director .webp" alt="Chinmay — Founding Director" className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                <img src="/people/Chinmay-Founding-Director .webp" alt="Chinmay, Founding Director" className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy-800/80 via-navy-800/10 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <h4 className="text-white font-heading font-bold">Chinmay Avinash Deshmukh</h4>
@@ -134,7 +134,7 @@ export default function About() {
             </Reveal>
             <Reveal delay={100} className="card overflow-hidden !p-0 group">
               <div className="relative aspect-[4/5] overflow-hidden">
-                <img src="/people/Nutan-Founding-Partner.webp" alt="Nutan — Founding Partner" className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                <img src="/people/Nutan-Founding-Partner.webp" alt="Nutan, Founding Partner" className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy-800/80 via-navy-800/10 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <h4 className="text-white font-heading font-bold">Nutan Avinash Deshmukh</h4>

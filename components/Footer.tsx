@@ -2,12 +2,12 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { Globe, Phone, Mail, MapPin, Linkedin, Instagram } from 'lucide-react';
+import { Globe, Phone, Mail, MapPin, Linkedin, Instagram, Youtube } from 'lucide-react';
 import { COMPANY_INFO, NAVIGATION, PRODUCT_CATEGORIES } from '@/lib/constants';
 
 const PRODUCT_LINKS: Record<string, string> = {
-  'Fresh Produce — Exports': '/products?tab=export',
-  'Fresh Produce — Imports': '/products?tab=import',
+  'Fresh Produce Exports': '/products?tab=export',
+  'Fresh Produce Imports': '/products?tab=import',
   'Spices': '/products?tab=export',
 };
 
@@ -60,6 +60,15 @@ export default function Footer() {
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5" />
+              </a>
+              <a
+                href="https://www.youtube.com/@bridgeglobeexims"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-lg bg-navy-700 flex items-center justify-center hover:bg-accent-500 transition-all duration-300 hover:-translate-y-1"
+                aria-label="YouTube"
+              >
+                <Youtube className="w-5 h-5" />
               </a>
             </div>
           </div>

@@ -75,7 +75,7 @@ function ProductsInner() {
                   <span className="label-accent mb-3 inline-flex">Export</span>
                   <h2 className="text-3xl font-heading font-bold text-navy-800 mt-3 mb-3">Fresh Produce</h2>
                   <p className="text-neutral-500 max-w-2xl leading-relaxed">
-                    Premium fruits and vegetables sourced directly from Indian farms — sorted, graded, and packed for international markets.
+                    Premium fruits and vegetables sourced directly from Indian farms, sorted, graded, and packed for international markets.
                   </p>
                 </div>
               </Reveal>
@@ -120,7 +120,7 @@ function ProductsInner() {
                 <span className="label-accent mb-3 inline-flex">Import</span>
                 <h2 className="text-3xl font-heading font-bold text-navy-800 mt-3 mb-3">Imported Fruits</h2>
                 <p className="text-neutral-500 max-w-2xl leading-relaxed">
-                  Quality fresh fruits sourced from trusted global suppliers — carefully selected for the Indian market.
+                  Quality fresh fruits sourced from trusted global suppliers, carefully selected for the Indian market.
                 </p>
               </div>
             </Reveal>
@@ -158,7 +158,7 @@ function ProductsInner() {
 }
 
 /* ────────────────────────────────────────────
-   Product Card (clean — no badge, no CTA)
+    Product Card (clean, no badge, no CTA)
    ──────────────────────────────────────────── */
 function ProductCard({ product }: { product: { name: string; image: string; description: string } }) {
   return (

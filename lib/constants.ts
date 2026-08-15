@@ -16,6 +16,7 @@ export const NAVIGATION = [
   { name: 'Home', path: '/' },
   { name: 'About', path: '/about' },
   { name: 'Products', path: '/products' },
+  { name: 'Gallery', path: '/gallery' },
   { name: 'Contact', path: '/contact' }
 ] as const;
 

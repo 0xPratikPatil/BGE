@@ -52,7 +52,7 @@ function Hero() {
 
             <Reveal delay={75}>
               <p className="text-lg text-neutral-600 leading-relaxed max-w-xl">
-                We connect businesses, markets, and opportunities across borders — enabling seamless international trade through trusted sourcing, quality products, and reliable global partnerships. From India to the world and beyond, BRIDGE GLOBE EXIMS is building a stronger bridge between markets and creating opportunities for businesses to grow globally.
+                We connect businesses, markets, and opportunities across borders, enabling seamless international trade through trusted sourcing, quality products, and reliable global partnerships. From India to the world and beyond, BRIDGE GLOBE EXIMS is building a stronger bridge between markets and creating opportunities for businesses to grow globally.
               </p>
             </Reveal>
 
@@ -194,7 +194,7 @@ function WhyChooseUs() {
    ═══════════════════════════════════════════ */
 function FeaturedProducts() {
   const products = [
-    { name: 'Alphonso', image: '/products/alphanso.webp', description: 'The king of mangoes — rich, aromatic, and naturally sweet.' },
+    { name: 'Alphonso', image: '/products/alphanso.webp', description: 'The king of mangoes, rich, aromatic, and naturally sweet.' },
     { name: 'Green Chilli', image: '/products/green-chillies.webp', description: 'Fresh green chillies, sorted and packed for export quality.' },
     { name: 'Semi Husked Coconut', image: '/products/dry-coconut.webp', description: 'Semi-husked coconuts with extended shelf life for export.' },
     { name: 'Onion', image: '/products/onion.webp', description: 'Red and white onions, sourced in bulk from Indian farms.' },

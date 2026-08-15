@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://bridgeglobeexims.com'),
   title: 'BRIDGEGLOBE EXIMS | Import & Export Company in India',
   description:
-    'BRIDGEGLOBE EXIMS connects Indian producers with global buyers — handling sourcing, compliance, and logistics for fresh produce and spice exports across 50+ countries.',
+    'BRIDGEGLOBE EXIMS connects Indian producers with global buyers, handling sourcing, compliance, and logistics for fresh produce and spice exports across 50+ countries.',
   keywords:
     'import export company, global trade, agricultural products export, spices export, India export, international trade, B2B export',
   robots: 'index, follow',
