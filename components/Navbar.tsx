@@ -30,12 +30,20 @@ export default function Navbar() {
       <div className="container-max">
         <div className="flex items-center justify-between h-[72px] px-6 lg:px-0">
           {/* Logo */}
-          <Link href="/" className="flex items-center shrink-0 group">
+          <Link href="/" className="flex items-center gap-3 shrink-0 group">
             <img
               src="/logo/final logo_400-400.png"
               alt="BRIDGEGLOBE EXIMS logo"
               className="h-12 w-12 object-contain transition-transform duration-300 group-hover:scale-105"
             />
+            <div>
+              <span className="block font-heading font-bold text-[15px] text-navy-700 leading-tight tracking-tight">
+                <span className="text-accent-500">BRIDGE</span>GLOBE EXIMS
+              </span>
+              <span className="block text-[10px] text-neutral-400 font-medium tracking-[0.14em] uppercase">
+                Import &amp; Export
+              </span>
+            </div>
           </Link>
 
           {/* Desktop nav */}
@@ -63,7 +71,7 @@ export default function Navbar() {
 
           {/* Right side */}
           <div className="flex items-center gap-3">
-            <Link href="/contact" className="hidden lg:inline-flex btn-primary !py-2.5 !px-5 !text-[13px]">
+            <Link href="/contact#contact-form" className="hidden lg:inline-flex btn-primary !py-2.5 !px-5 !text-[13px]">
               Get a quote
             </Link>
             <button
@@ -98,7 +106,7 @@ export default function Navbar() {
               );
             })}
             <div className="pt-3 border-t border-[#E2E8F0] mt-3 space-y-2">
-              <Link href="/contact" className="btn-primary w-full justify-center">
+              <Link href="/contact#contact-form" className="btn-primary w-full justify-center">
                 Get a quote
               </Link>
               <a

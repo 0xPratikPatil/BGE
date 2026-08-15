@@ -13,22 +13,30 @@ const PRODUCT_LINKS: Record<string, string> = {
 
 export default function Footer() {
   return (
-    <footer className="bg-navy-800 text-white relative overflow-hidden">
+    <footer className="bg-navy-800 text-white relative">
       {/* Decorative gradient bar */}
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-accent-400 via-amber to-accent-400" />
 
-      <div className="container-max section">
+      <div className="container-max section px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-12">
           {/* Company info */}
-          <div>
-            <Link href="/" className="flex items-center mb-6">
+          <div className="min-w-0">
+            <Link href="/" className="flex items-center gap-3 mb-6">
               <Image
                 src="/logo/final logo_400-400.png"
                 alt="BRIDGEGLOBE EXIMS logo"
-                width={48}
-                height={48}
-                className="rounded-xl"
+                width={56}
+                height={56}
+                className="rounded-xl shrink-0"
               />
+              <div>
+                <span className="font-heading font-bold text-lg block">
+                  <span className="text-accent-400">BRIDGE</span>GLOBE EXIMS
+                </span>
+                <span className="text-xs text-navy-200">
+                  Import &amp; Export Solutions
+                </span>
+              </div>
             </Link>
             <p className="text-navy-200 text-sm leading-relaxed mb-6">
               Your trusted partner for international trade. We connect Indian manufacturers

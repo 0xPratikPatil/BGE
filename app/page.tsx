@@ -58,7 +58,7 @@ function Hero() {
 
             <Reveal delay={200}>
               <div className="flex flex-wrap gap-4">
-                <Link href="/contact" className="btn-primary">
+                <Link href="/contact#contact-form" className="btn-primary">
                   Request a Quote
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Link>
@@ -459,7 +459,7 @@ function FinalCTA() {
         <Reveal delay={200}>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link
-              href="/contact"
+              href="/contact#contact-form"
               className="inline-flex items-center justify-center px-6 py-3 bg-white text-accent-600 font-semibold rounded-xl shadow-md transition-all duration-300 hover:bg-neutral-50 hover:shadow-lg hover:-translate-y-0.5"
             >
               Request a Trade Consultation

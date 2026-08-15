@@ -223,7 +223,7 @@ function InquiryForm() {
                   </button>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="space-y-5">
+                <form id="contact-form" onSubmit={handleSubmit} className="space-y-5">
                   <div className="grid sm:grid-cols-2 gap-5">
                     {fields.map((field) => {
                       const Icon = field.icon;
