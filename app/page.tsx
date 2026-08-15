@@ -1,5 +1,4 @@
 'use client';
-import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import {
@@ -10,7 +9,6 @@ import {
 import {
   COMPANY_INFO, WHY_CHOOSE_US,
   CERTIFICATIONS, EXPORT_MARKETS, TRADE_ROUTES,
-  FRESH_PRODUCE_EXPORTS, FRESH_PRODUCE_IMPORTS, SPICES
 } from '@/lib/constants';
 import Reveal from '@/components/Reveal';
 

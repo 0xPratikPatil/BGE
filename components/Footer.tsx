@@ -12,8 +12,6 @@ const PRODUCT_LINKS: Record<string, string> = {
 };
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
-
   return (
     <footer className="bg-navy-800 text-white relative overflow-hidden">
       {/* Decorative gradient bar */}
